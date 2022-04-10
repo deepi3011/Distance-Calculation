@@ -7,3 +7,6 @@ Distance between two places is calculated using the Google Distance Matrix API.
 # Login Page
 ![image](https://user-images.githubusercontent.com/66779859/162630909-2f1cfbf3-52fd-476d-856d-555033f1a657.png)
 
+# Home Page
+![image](https://user-images.githubusercontent.com/66779859/162631382-f9e0e8ac-1932-4cec-8f0a-fb8ea3a480ed.png)
+
