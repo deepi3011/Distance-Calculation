@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Balsamiq Sans', cursive;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
+  /* background-image: linear-gradient( 178.9deg,  rgba(176,57,105,1) 5.1%, rgba(229,113,159,1) 109.3% ); */
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+::selection{
+  background: #e8b7d4;
+  color: #fff;
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  /* background: #fff; */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 10px 30px 45px 50px rgba(8, 8, 8, 0.1);
+  /* background: url(E:\Front-end\images\img1.png); */
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  left:25px;
+  top:10px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  /* text-align: center;  */
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  color: #fff; 
+}
+.wrapper .controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  
+  border-radius: 10px;
+}
+
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 2px solid #b6b1cc;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 1s ease-in-out;
+  /* color: orangered; */
+}
+.form-inner form .field input:focus{
+  border-color: #e8b7d4;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #cc6e9a;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+  transition: all 1s ease-in;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  border-radius: 15px;
+  /* background: -webkit-linear-gradient(right, #a445b2, #fa4299, #a445b2, #fa4299); */
+  background: -webkit-linear-gradient(left, #b6b1cc, #e8b7d4, #a5678e);
+  
+  
+}
+form .btn:hover .btn-layer{
+  left: 0;
+  /* background: linear-gradient(90deg, transparent, #03e9f4); */
+  /* animation: btn-anim1 1s linear infinite; */
+  /* background-image: linear-gradient(to right, #ebddcf 0%, #f1dfdf  51%, #e0cebb  100%); */
+  background-image: linear-gradient(to right, #cc527a 0%, #e8175d  51%, #474747  100%,#363636 10%);
+  background-position: right center;
+  border-radius: 10px;
+  transition: all 2s ease-in-out;
+  
+  
+  
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+img{
+    height:65px;
+    margin-left: 10px;
+    margin-top: 6px;
+    border-radius: 10px;
+}
+/* .slide-controls .slide:hover{
+    
+} */
