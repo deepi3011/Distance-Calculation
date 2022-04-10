@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Distance Calculation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_page1.css">
+</head>
+
+<body>
+    <br><br>
+    <h3>O - D Distance Calculation</h3>
+    <br>
+    <center>
+        <label for="origin" class="origin">Origin:</label><br>
+        <input type="text" id="origin" name="origin" placeholder="Enter the origin..."><br><br>
+        <label for="destination" class="origin">Destination:</label><br>
+        <input type="text" id="destination" name="destination" placeholder="Enter the destination..."><br><br>
+        <button id="button">Get the Distance</button>
+        <p id="result"></p>
+        <br>
+        <br>
+        <p>Distance(km) : </p>
+        <p>Travelling Time(min) : </p>
+    </center>
+    <br>
+    <div id="map"></div>
+    <footer>
+        <p style="color: aliceblue;">“Project sponsored by MeitY” </p>
+    </footer>
+    <!-- <script src="./scripts/distance.js" async defer></script> -->
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABb0ZOkaGAeXf0qb-KS7l_oEcy6e_JnKY&callback=initMap">
+        </script>
+
+
+    <script src="./distance.js">
+
+    </script>
+</body>
+
+</html>
